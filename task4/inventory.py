@@ -5,9 +5,6 @@ class Inventory():
 
     inventary =[]
     id=0
-    # def _init__(self):
-    #     pass
-        # self.inventary=[]
 
     def list_inventory(self):
         if not len(self.inventary):
@@ -19,11 +16,13 @@ class Inventory():
 
         print(f"Products quantity: {len(self.inventary)}")
     
+
     def add_item(self,item):
         per = Product(item.name,item.quantity,item.price,self.id)
         self.id+=1
         self.inventary.append(per)
         return per
+
 
     def update_item(self):
         if not len(self.inventary):
@@ -40,23 +39,17 @@ class Inventory():
             print("Name old -> ",self.inventary[id])
             self.inventary[id].quantity = value
             print("Name new -> ",self.inventary[id])
-
         elif option == 3:
             print("Name old -> ",self.inventary[id])
             self.inventary[id].price = value
             print("Name new -> ",self.inventary[id])
         self.list_inventory()
-      
 
-
-    def update_product_quantity(self):
-        pass
 
     def delete_item(self):
         if not len(self.inventary):
             print("\nNo items to delete !!!")
             return
-       
         self.list_inventory()
         id = int(menu.get_id())
         try:
@@ -71,7 +64,5 @@ class Inventory():
     def get_inventory(self):
         return self.inventary
 
-    # def getProductts(self):
-    #    return self.products
-    
+
     

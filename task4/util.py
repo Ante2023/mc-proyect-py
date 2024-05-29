@@ -6,6 +6,7 @@ def form_nuevo_item():
 
     return name,cant,price
 
+
 def show_menu():
     print("\nSelect a number from the menu")
     print(" 1: List product ")
@@ -18,6 +19,7 @@ def show_menu():
     print("")
     return option
 
+
 def get_name():
     while True:
         name=input(" - Product name \"String\": ")
@@ -26,6 +28,7 @@ def get_name():
         else:
             print("Write  a name: ")
 
+
 def get_cant():
     while True:
         cant=input(" - Quantity \"Natural\" [0-1000]: ")
@@ -33,6 +36,7 @@ def get_cant():
             return cant
         else:
             print("The cant is incorrect, please enter a valid number: ")
+
 
 def get_price():
     while True:
@@ -45,8 +49,10 @@ def get_price():
         except ValueError:
                 print("The price is incorrect, value \"Decimal\" [1.0 - 1000.0]: €\n")
 
+
 def get_id():
     return  input("\nWrite the ID of item to select : ")
+
 
 def get_field():
     id = int(get_id())

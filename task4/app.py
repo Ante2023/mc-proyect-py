@@ -5,8 +5,10 @@ from graphics import Graphics
 import util  as menu
 
 def init_app():
+    
     inventory = Inventory()
     option = menu.show_menu()
+
     while True:
         if option == "1": # List product
             inventory.list_inventory()
@@ -16,7 +18,6 @@ def init_app():
             print(product)
         elif option == "3": #update
             inventory.update_item()
-            # break  # solo finaliza el while, luego sigue exe función
         elif option == "4": # Delete
             inventory.delete_item() 
         elif option == "5": #graphics
@@ -26,5 +27,6 @@ def init_app():
         else:
            print("Incorrect Opción!!")
         option=menu.show_menu()
-    
-init_app()
+        
+if __name__=='__main__':
+    init_app()
