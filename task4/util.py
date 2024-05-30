@@ -58,9 +58,8 @@ def get_field():
     id = int(get_id())
     print(f"\nChoose an option and enter a new number")
     print(f"1: new_name, 2: new_quantity,3: new_price")
-    option = int(input("Enter the option"))
+    option = int(input("Enter the option: "))
     value = valida_valor(option)
-    print(id, option,value)
     return id, option, value
 
 

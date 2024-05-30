@@ -32,17 +32,11 @@ class Inventory():
         self.list_inventory()
         id, option, value = menu.get_field()
         if option== 1:
-            print("Name old -> ",self.inventary[id])
             self.inventary[id].name = value
-            print("Name new -> ",self.inventary[id])
         elif option == 2:
-            print("Name old -> ",self.inventary[id])
             self.inventary[id].quantity = value
-            print("Name new -> ",self.inventary[id])
         elif option == 3:
-            print("Name old -> ",self.inventary[id])
             self.inventary[id].price = value
-            print("Name new -> ",self.inventary[id])
         self.list_inventory()
 
 
