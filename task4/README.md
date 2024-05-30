@@ -201,10 +201,10 @@ Select a number from the menu
 Select an option: 5
 ```
 ## Diagrama de barra
-![Diagrama-clases](images/barras.png "diagrama de barra") 
+![Diagrama-clases](images/d-barras.png "diagrama de barra") 
 ## Diagrama de torta
-![Diagrama-clases](images/torta.png "diagrama de torta") 
+![Diagrama-clases](images/d-torta.png "diagrama de torta") 
 ## Histograma
-![Diagrama-clases](images/histograma.png "diagrama de histograma") 
+![Diagrama-clases](images/d-histograma.png "diagrama de histograma") 
 ## Diagrama de Disperción
-![Diagrama-clases](images/dispercion.png "diagrama de Disperción") 
+![Diagrama-clases](images/d-dispercion.png "diagrama de Disperción") 
